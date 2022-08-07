@@ -50,9 +50,9 @@ function AddItemsToTable(uName, email, pass) {
 
 // Password
 var passwordToAcces = prompt("Enter the password");
-if (passwordToAcces === null) {
+if (passwordToAcces == null) {
     close();
-} else if (passwordToAcces === "libyzxy0") {
+} else if (passwordToAcces == "libyzxy0") {
     
 } else {
     close();
