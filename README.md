@@ -1,5 +1,5 @@
 # Demo
 
-### [Tables Page](https://test-project-crud.vercel.app/admin/index.html)
+### [Tables Page](https://form-tables.vercel.app/admin/)
 
-### [Form Page](https://test-project-crud.vercel.app/)
+### [Form Page](https://form-tables.vercel.app/)
