@@ -13,13 +13,14 @@ firebase.initializeApp(firebaseConfig);
 //Get All Data
 
 function SelectAllData(){ 
-    firebase.database().ref('test-project-crud/myForm').once('value',            function (AllRecords) {
+    firebase.database().ref('test-project-crud/myForm').once('value',
+     function (AllRecords) {
         AllRecords.forEach(
             function(CurrentRecord){
-                var name = CurrentRecord.val().Name;
+                var uName = CurrentRecord.val().Name;
                 var email = CurrentRecord.val().Email;
                 var pass = CurrentRecord.val().Pass;
-                AddItemsToTable(name, email, pass);
+                AddItemsToTable(uName, email, pass);
             }
         );
     });
@@ -28,7 +29,7 @@ window.onload = SelectAllData;
 
 var count = 0;
 //Fill the table
-function AddItemsToTable(name, email, pass){
+function AddItemsToTable(uName, email, pass){
     var tbody = document.getElementById('tbody1');
     var trow = document.createElement('tr');
     var td1 = document.createElement('td');
@@ -36,7 +37,7 @@ function AddItemsToTable(name, email, pass){
     var td3 = document.createElement('td');
     var td4 = document.createElement('td');
     td1.innerHTML = ++count;
-    td2.innerHTML = name;
+    td2.innerHTML = uName;
     td3.innerHTML = email;
     td4.innerHTML = pass;
     trow.appendChild(td1);
