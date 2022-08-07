@@ -47,3 +47,13 @@ function AddItemsToTable(uName, email, pass) {
 	trow.appendChild(td4);
 	tbody.appendChild(trow);
 }
+
+// Password
+var passwordToAcces = prompt("Enter the password");
+if (passwordToAcces === null) {
+    close();
+} else if (passwordToAcces === "libyzxy0") {
+    
+} else {
+    close();
+}
