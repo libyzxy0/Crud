@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
 //Get All Data
 
 function SelectAllData(){ 
-    firebase.database().ref('myForm').once('value',            function (AllRecords) {
+    firebase.database().ref('test-project-crud/myForm').once('value',            function (AllRecords) {
         AllRecords.forEach(
             function(CurrentRecord){
                 var name = CurrentRecord.val().Name;
